@@ -1,6 +1,3 @@
-.b {
-  color: #273c75;
-}
 
 .App {
   text-align: center;
@@ -62,6 +59,8 @@
   background-color: #fff
 }
 
+
+
 .toastbody {
   color:#222
 }
@@ -77,8 +76,13 @@
   top: 0;
 }
 
+.b {
+  color: #273c75;
+}
 
-
+.toastbody {
+  color:#130f40
+}
 
 
 /*  Split part

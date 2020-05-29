@@ -16,7 +16,7 @@ const ToastSkills = (props) => {
           <br/><br/>
           <h3 className="b">Etudes Sectorielles</h3>
           <br/>
-          <p>
+          <p className="toastbody">
               <ul>
                 <li> <em>Étude de marché & Benchmark : </em> étude comparée du projet du client à l’échelle locale, régionale, nationale ou mondiale , recommandations business
                 </li>
@@ -31,7 +31,7 @@ const ToastSkills = (props) => {
           <br/><br/>
           <h3 className="b">Lancement et levée de fonds</h3>
           <br/>
-          <p>
+          <p className="toastbody">
               <ul>
                 <li> <em>Accompagnement de votre projet :</em> Accompagnemnet à la création d'entreprise ainsi qu'a la recherche de fonds pour réaliser votre projet. Cette offre est réalisée en partenariat avec un cabinet d'expertise comptable
                 </li>
@@ -43,7 +43,7 @@ const ToastSkills = (props) => {
           <br/><br/>
           <h3 className="b"> Transformation digitale </h3>
           <br/>
-          <p>
+          <p className="toastbody">
               <ul>
                 <li> Développement d’applications Web et de sites sur mesures, déploiement de votre activité en ligne
                 </li>
@@ -57,7 +57,7 @@ const ToastSkills = (props) => {
           <br/><br/>
           <h3 className="b"> Logiciel de gestion sur-mesure</h3>
           <br/>
-          <p>
+          <p className="toastbody">
               <ul>
                 <li> Bringing your idea to code from zero to one as a minimal viable product (MVP) and beyond within a well-architected application.
                 </li>
