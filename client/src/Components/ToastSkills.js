@@ -11,7 +11,6 @@ const ToastSkills = (props) => {
 
   return (
 
-    <Container-fluid>
       <Row className="toastbody portrait">
         <Col sm="3" className="b"> <MdEqualizer size ={45}/>
           <br/><br/>
@@ -69,7 +68,6 @@ const ToastSkills = (props) => {
         </Col>
 
       </Row>
-    </Container-fluid>
   );
 }
 
