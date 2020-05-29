@@ -11,8 +11,8 @@ const ToastSkills = (props) => {
 
   return (
 
-      <Row className="toastbody portrait">
-        <Col sm="3" className="b"> <MdEqualizer size ={45}/>
+      <Row className="">
+        <Col className="b"> <MdEqualizer size ={45}/>
           <br/><br/>
           <h3 className="b">Etudes Sectorielles</h3>
           <br/>
@@ -27,7 +27,7 @@ const ToastSkills = (props) => {
           </p>
         </Col>
 
-        <Col sm="3" className="b"> <MdEuroSymbol size ={45}/>
+        <Col className="b"> <MdEuroSymbol size ={45}/>
           <br/><br/>
           <h3 className="b">Lancement et levée de fonds</h3>
           <br/>
@@ -39,7 +39,7 @@ const ToastSkills = (props) => {
           </p>
         </Col>
 
-        <Col sm="3" className="b"> <MdTouchApp size ={45}/>
+        <Col className="b"> <MdTouchApp size ={45}/>
           <br/><br/>
           <h3 className="b"> Transformation digitale </h3>
           <br/>
@@ -53,7 +53,7 @@ const ToastSkills = (props) => {
           </p>
         </Col>
 
-        <Col sm="3" className="b"> <MdTrendingUp size ={45}/>
+        <Col className="b"> <MdTrendingUp size ={45}/>
           <br/><br/>
           <h3 className="b"> Logiciel de gestion sur-mesure</h3>
           <br/>
