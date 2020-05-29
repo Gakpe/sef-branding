@@ -1,0 +1,214 @@
+.b {
+  color: #273c75;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.portrait{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    flex:1
+    }
+
+.vita {
+  background-color: #2c3e50;
+  color: #fff
+}
+
+.prez{
+  background-color: #ecf0f1
+}
+
+.backgroundAccueil{
+  background-color: #fff
+}
+
+.toastbody {
+  color:#222
+}
+
+/* CSS pour la liste des skills
+*/
+
+.vline {
+  border-left: 2px solid grey;
+  height: 100px;
+  left: 50%;
+  borderStyle: 'dotted';
+  top: 0;
+}
+
+
+
+
+
+/*  Split part
+*/
+
+
+:root {
+  --container-bg-color: #333;
+  --left-bg-color: rgba(223, 39, 39, 0.7);
+  --left-button-hover-color: rgba(161, 11, 11, 0.3);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+.block {
+  padding:0;
+  margin:0;
+  background: var(--container-bg-color);
+  width: 100%;
+  height: 40rem;
+  overflow-x: hidden;
+  position: relative;
+
+}
+
+.container-fluid {
+    width: 100%;
+  }
+
+.caract {
+  font-size: 3rem;
+  color: #fff;
+  left: 20%;
+  transform: translateX(-5%);
+  white-space: nowrap;
+}
+.detail{
+  color: #111;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 4rem;
+  padding-top: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-70%);
+}
+
+.gauche .button:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+}
+
+.droite .button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+
+.split {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.gauche {
+  left:0;
+  background: url('Photo2.jpg') center center no-repeat;
+  background-size: cover;
+}
+.split.gauche:before {
+  position:relative;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+.split.droite {
+  right:0;
+  background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before {
+  position:relative;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+}
+
+.split.gauche, .split.droite, .split.droite:before, .split.gauche:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .gauche {
+  width: var(--hover-width);
+}
+
+.hover-left .droite {
+  width: var(--other-width);
+}
+
+.hover-left .droite:before {
+  z-index: 2;
+}
+
+.hover-right .droite {
+  width: var(--hover-width);
+}
+
+.hover-right .gauche {
+  width: var(--other-width);
+}
+
+.hover-right .gauche:before {
+  z-index: 2;
+}
