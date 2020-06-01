@@ -27,9 +27,6 @@ const AppNavbar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/"> Projets</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink href="https://www.linkedin.com/in/julien-gakpe-9b370855/">Contact</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
@@ -37,11 +34,11 @@ const AppNavbar = (props) => {
                 Get to know me
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>
+                <DropdownItem href="#SplitScreen">
                   Formation
                 </DropdownItem>
-                <DropdownItem>
-                  Centres d'intérêts
+                <DropdownItem href="#Vita">
+                  Projets
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>

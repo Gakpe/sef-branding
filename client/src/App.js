@@ -8,6 +8,7 @@ import SplitScreen from './Components/SplitScreen/Splitscreen';
 import Footer from './Components/Footer.js';
 
 
+
 import { Card, Button, CardTitle, CardText, Row, Col, Container, Alert } from 'reactstrap';
 import Image from './JG.jpg';
 
@@ -30,10 +31,20 @@ function App() {
               Eventually it led me to create a plateform for companies and individuals who share my enthusiasm and beliefs.
               I am happy to welcome you on my website :-) </p>
 
+              <div class="social">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <a href="https://twitter.com/traversymedia" target="_blank"> <i className="fab fa-twitter fa-3x"> </i></a>
+                <a href="https://facebook.com/traversymedia" target="_blank"> <i className="fab fa-facebook fa-3x"> </i></a>
+                <a href="https://github.com/bradtraversy" target="_blank"><i className="fab fa-github fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/bradtraversy" target="_blank"><i className="fab fa-linkedin fa-3x"></i></a>
+              </div>
+
               <div className="themed-container" fluid={true}>
                 <Row xs={6} md={6} className="portrait">
                 <img src={Image} className="rounded-circle" alt="Portrait"/>
                 </Row>
+
+
               </div>
           </div>
       </section>
@@ -47,10 +58,11 @@ function App() {
       <br/>
 
     </div>
-
+      <div id="SplitScreen">
       <SplitScreen/>
+      </div>
       <br/>
-    <div className=" container-fluid vita"> <h2>VITA </h2> <p>My Professional Story</p></div>
+    <div id="Vita" className="container-fluid vita"> <h2>VITA </h2> <p>My Professional Story</p></div>
       <Timeline/>
       <Footer/>
     </div>

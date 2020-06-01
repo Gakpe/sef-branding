@@ -38,6 +38,156 @@
   }
 }
 
+/* CSS pour la video background
+*/
+
+.SubContent {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.Container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.videocontainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.Video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.videocontainer:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+}
+
+.Content {
+	z-index: 2;
+}
+
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	background: #222;
+	color: #222;
+	border-radius: 5px;
+	border: solid #fff 5px;
+	margin-top: 25px;
+	opacity: 0.8;
+}
+
+.btn:hover {
+	transform: scale(1.2);
+}
+
+/*
+  .Container {
+    min-height: 300px;
+    max-height: 800px;
+    overflow: hidden;
+    margin-bottom: 2px;
+
+}
+
+  .Video {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 2;
+
+  }
+
+  .videocontainer:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+  display: flex;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+}
+
+  .Content {
+    position: absolute;
+    top: 0;
+    color:#fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    z-index: 3;
+
+  }
+  .SubContent {
+      text-align: center;
+      padding: 10px;
+    }
+  .SubContent p {
+      color: #fff;
+      font-size: 1.3rem;
+  }
+  .SubContent button {
+      font-weight: bold;
+      margin-top: 30px;
+      color: #d2dae2;
+      border: #d2dae2 1px solid;
+      padding: 10px 5px;
+      background-color: rgba(0,0,0,0.2);
+      font-size: 1.25rem;
+      border-radius: 5px;
+  }
+  .SubContent button:hover {
+      background-color: rgba(0,0,0,0.2);
+      color: #7f8fa6;
+      transform: scale(0.92);
+  }
+
+  .SubContent img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    border: #d2dae2 1px solid;
+  }
+
+
+/* Bordel a ranger */
+
 .portrait{
     justify-content: center;
     align-items: center;
@@ -60,7 +210,6 @@
 }
 
 
-
 .toastbody {
   color:#222
 }
@@ -81,18 +230,32 @@
 }
 
 .toastbody {
-  color:#130f40
+  color: #130f40;
 }
 
 
-/*  Split part
-*/
+/* Content Splitpart */
 
+.ToastAna {
+color: blue;
+position: relative;
+top: 30%;
+left: 28%;
+}
+
+.ToastDev {
+color: blue;
+position: relative;
+top: 30%;
+left: 28%;
+}
+
+/*  Split part */
 
 :root {
   --container-bg-color: #333;
   --left-bg-color: rgba(223, 39, 39, 0.7);
-  --left-button-hover-color: rgba(161, 11, 11, 0.3);
+  --left-button-hover-color: rgba(92, 92, 92, 0.3);
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --right-button-hover-color: rgba(92, 92, 92, 0.3);
   --hover-width: 75%;
